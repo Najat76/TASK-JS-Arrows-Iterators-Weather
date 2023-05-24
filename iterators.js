@@ -67,7 +67,9 @@ const hottestDays = function hottestDays(temperatures, threshhold) {
  *******************************************/
 
 const logHottestDays = function (temperatures, threshhold) {
-  return logHottestDays.find(toCelsius(hottestDays(temperatures, threshhold)));
+  return logHottestDays.filter(
+    toCelsius(hottestDays(temperatures, threshhold))
+  );
 };
 
 /* Uncomment the following lines to test your code... */
